@@ -336,21 +336,157 @@ Different architectural changes behaved differently across datasets, showing tha
 
 ## Before vs After
 
-Add your visual comparison images here:
+The project was evaluated across multiple real-world object-detection scenarios.
 
-```markdown
-![PPE Detection](brain-tumor.png)
+## 🦺 PPE Detection
 
-![Football Detection](football.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/21illusion/yolov8-accuracy-improvement/main/ppe.png" width="800" alt="PPE Detection">
+</p>
 
-![Cattle Detection](cattle1.png)
+---
 
-![Cattle Detection](cattle2.png)
+## ⚽ Football Player Detection
 
-![Face Mask Detection](face-mask.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/21illusion/yolov8-accuracy-improvement/main/football.png" width="800" alt="Football Player Detection">
+</p>
 
-![Brain Tumor Detection](/brain-tumor.png)
-```
+---
+
+## 🐄 Cattle Detection
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/21illusion/yolov8-accuracy-improvement/main/cattle1.png" width="800" alt="Cattle Detection">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/21illusion/yolov8-accuracy-improvement/main/cattle2.png" width="800" alt="Cattle Detection">
+</p>
+
+---
+
+## 😷 Face Mask Detection
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/21illusion/yolov8-accuracy-improvement/main/face-mask.png" width="800" alt="Face Mask Detection">
+</p>
+
+---
+
+## 🧠 Brain Tumor Detection
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/21illusion/yolov8-accuracy-improvement/main/brain-tumor.png" width="800" alt="Brain Tumor Detection">
+</p>
+
+---
+
+# 🎥 Demonstration
+
+The repository contains several demonstration videos showing the trained models and inference/deployment experiments.
+
+## 🚀 Main YOLOv8 Demonstration
+
+<p align="center">
+  <video controls width="900">
+    <source src="https://raw.githubusercontent.com/21illusion/yolov8-accuracy-improvement/main/Third%20project%20YOLOv8%20Accuracy%20Improvement%20for%20Object%20Detection.mp4" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
+</p>
+
+---
+
+## 🧠 Brain Tumor Detection
+
+<p align="center">
+  <video controls width="900">
+    <source src="https://raw.githubusercontent.com/21illusion/yolov8-accuracy-improvement/main/brain-tumor.mp4" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
+</p>
+
+---
+
+## 🧠 Brain Tumor — Additional Demonstration
+
+<p align="center">
+  <video controls width="900">
+    <source src="https://raw.githubusercontent.com/21illusion/yolov8-accuracy-improvement/main/brain-tumor2.mp4" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
+</p>
+
+---
+
+## 😷 Face Mask Detection
+
+<p align="center">
+  <video controls width="900">
+    <source src="https://raw.githubusercontent.com/21illusion/yolov8-accuracy-improvement/main/face-mask.mp4" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
+</p>
+
+---
+
+# ⚡ Deployment & Optimization Demonstrations
+
+## 🚀 TensorRT
+
+The TensorRT experiment demonstrates deployment-oriented inference optimization on NVIDIA hardware.
+
+<p align="center">
+  <video controls width="900">
+    <source src="https://raw.githubusercontent.com/21illusion/yolov8-accuracy-improvement/main/TensorRT.mp4" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
+</p>
+
+---
+
+## 💻 OpenVINO
+
+The OpenVINO demonstration explores inference optimization and deployment using Intel's inference ecosystem.
+
+<p align="center">
+  <video controls width="900">
+    <source src="https://raw.githubusercontent.com/21illusion/yolov8-accuracy-improvement/main/OpenVINO.mp4" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
+</p>
+
+---
+
+# 📚 Documentation
+
+## 📊 Complete Project Presentation
+
+The complete academic presentation contains:
+
+* YOLO evolution and foundations
+* YOLOv8 architecture
+* Modified architecture
+* Experimental methodology
+* Dataset evaluations
+* Visual comparisons
+* TensorRT optimization
+* OpenVINO optimization
+* Future work
+
+<p align="center">
+  <a href="https://github.com/21illusion/yolov8-accuracy-improvement/blob/main/presentation.pptx">
+    <img src="https://img.shields.io/badge/📊%20VIEW%20POWERPOINT-Complete%20Presentation-FF6F00?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white" alt="View PowerPoint Presentation">
+  </a>
+</p>
+
+<p align="center">
+  <b>📄 presentation.pptx</b><br>
+  Complete academic presentation for the YOLOv8 Accuracy Improvement project.
+</p>
+
+> 💡 GitHub does not provide a native PowerPoint slide viewer inside a README. The button above opens the actual `.pptx` file stored in the repository, where it can be downloaded and opened with Microsoft PowerPoint or another compatible application.
+
 
 ---
 
@@ -473,7 +609,7 @@ The trained model can be demonstrated through real-time or recorded object-detec
 
 ### ▶️ Demo Video
 
-🎬 **[Watch the YOLOv8 Demonstration]([YOUR_VIDEO_LINK_HERE](https://youtu.be/KwKuZ-Td4NE))**
+🎬 **[Watch the YOLOv8 Demonstration](https://youtu.be/KwKuZ-Td4NE)**
 
 ---
 
