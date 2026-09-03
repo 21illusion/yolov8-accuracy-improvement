@@ -465,47 +465,6 @@ The objective was to investigate more efficient deployment of YOLO-based detecti
 
 ---
 
-# 📂 Repository Structure
-
-```text
-yolov8-accuracy-improvement/
-│
-├── 📄 README.md
-│
-├── 📁 training/
-│   ├── train.py
-│   └── ...
-│
-├── 📁 evaluation/
-│   ├── evaluate.py
-│   └── ...
-│
-├── 📁 models/
-│   └── ...
-│
-├── 📁 configs/
-│   └── ...
-│
-├── 📁 inference/
-│   └── ...
-│
-├── 📁 optimization/
-│   ├── 📁 tensorrt/
-│   └── 📁 openvino/
-│
-├── 📁 results/
-│   ├── 📁 baseline/
-│   ├── 📁 improved/
-│   ├── 📁 graphs/
-│   └── 📁 comparisons/
-│
-├── 📁 demo/
-│   └── ...
-│
-├── 📄 requirements.txt
-└── 📄 LICENSE
-```
-
 # 📚 Documentation
 
 The complete academic presentation contains:
