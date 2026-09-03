@@ -489,7 +489,7 @@ The complete academic presentation contains:
 - OpenVINO optimization
 - Future work
 
-📄 **[View the Complete Presentation](YOUR_PDF_LINK_HERE)**
+📄 **[View the Complete Presentation](presentation.pptx)**
 
 ---
 
