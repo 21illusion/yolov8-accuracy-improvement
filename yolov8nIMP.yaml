@@ -1,0 +1,54 @@
+nc: 80  # number of classes
+scales:
+  # [depth, width, max_channels]
+  n: [0.33, 0.25, 1024]  # YOLOv8n
+  s: [0.33, 0.50, 1024]  # YOLOv8s
+  m: [0.67, 0.75, 768]   # YOLOv8m
+  l: [1.00, 1.00, 512]   # YOLOv8l
+  x: [1.00, 1.25, 512]   # YOLOv8x
+
+# Backbone
+# Enhanced YOLOv8 backbone
+# YOLOv8.0n backbone
+# YOLOv8.0n backbone - universal improvements
+backbone:
+  # [from, repeats, module, args]
+  - [-1, 1, Conv, [64, 3, 2]] # 0-P1/2
+  - [-1, 1, Conv, [128, 3, 2]] # 1-P2/4
+  - [-1, 5, C2f, [128, True]]
+  - [-1, 1, ADown, [256]] # 3-P3/8
+  - [-1, 8, C2f, [256, True]]
+  - [-1, 1, ADown, [512]] # 5-P4/16
+  - [-1, 8, C3TR, [512, True]]
+  - [-1, 1, ADown, [1024]] # 7-P5/32
+  - [-1, 5, C2f, [1024, True]]
+  - [-1, 1, SPPF, [1024, 5]] # 9
+  - [-1, 1, SPPF, [1024, 7]] # 10
+  - [[-2, -1], 1, Concat, [1]]  # Merg 11
+  
+  
+  
+
+# YOLOv8.0n head
+head:
+ 
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]]
+  - [[-1, 6], 1, Concat, [1]] # cat backbone P4
+  - [-1, 5, C2f, [512]] # 14
+ 
+ 
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]]
+  - [[-1, 4], 1, Concat, [1]] # cat backbone P3
+  - [-1, 5, C2f, [256]] # 17   small
+
+
+  - [-1, 1, ADown, [256]] # 18   medium
+  - [[-1, 14], 1, Concat, [1]] # cat head P4
+  - [-1, 5, C2f, [512]] # 20 
+
+
+
+  - [-1, 1, ADown, [512]] # 21  large
+  
+
+  - [[17, 20, 21], 1, Detect, [nc]] # Detect
