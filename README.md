@@ -339,15 +339,17 @@ Different architectural changes behaved differently across datasets, showing tha
 Add your visual comparison images here:
 
 ```markdown
-![PPE Detection](results/comparisons/ppe.png)
+![PPE Detection](brain-tumor.png)
 
-![Football Detection](results/comparisons/football.png)
+![Football Detection](football.png)
 
-![Cattle Detection](results/comparisons/cattle.png)
+![Cattle Detection](cattle1.png)
 
-![Face Mask Detection](results/comparisons/face-mask.png)
+![Cattle Detection](cattle2.png)
 
-![Brain Tumor Detection](results/comparisons/brain-tumor.png)
+![Face Mask Detection](face-mask.png)
+
+![Brain Tumor Detection](/brain-tumor.png)
 ```
 
 ---
@@ -471,7 +473,7 @@ The trained model can be demonstrated through real-time or recorded object-detec
 
 ### ▶️ Demo Video
 
-🎬 **[Watch the YOLOv8 Demonstration](YOUR_VIDEO_LINK_HERE)**
+🎬 **[Watch the YOLOv8 Demonstration]([YOUR_VIDEO_LINK_HERE](https://youtu.be/KwKuZ-Td4NE))**
 
 ---
 
