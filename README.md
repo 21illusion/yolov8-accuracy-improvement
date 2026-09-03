@@ -465,6 +465,16 @@ The objective was to investigate more efficient deployment of YOLO-based detecti
 
 ---
 
+# 🎥 Demonstration
+
+The trained model can be demonstrated through real-time or recorded object-detection inference.
+
+### ▶️ Demo Video
+
+🎬 **[Watch the YOLOv8 Demonstration](YOUR_VIDEO_LINK_HERE)**
+
+---
+
 # 📚 Documentation
 
 The complete academic presentation contains:
